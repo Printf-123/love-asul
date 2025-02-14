@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f180b1; /* Soft pink background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Image Grid (Left Section) */
+.image-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  padding: 10px;
+  background-color: #ffe6ea;
+}
+.image-grid img {
+  width: 100%;
+  aspect-ratio: 1/1; /* Make them squares */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Message Section (Right Side) */
+.message-container {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+  background-color: #ffe6ea; /* Light pink background */
+}
+.message-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff4d6d; /* Romantic red-pink */
+}
+.message-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
